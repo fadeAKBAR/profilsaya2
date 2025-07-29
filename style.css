@@ -1,0 +1,108 @@
+/* Mengatur font dasar dan latar belakang untuk seluruh halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Kartu profil utama */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover pada kartu */
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Foto profil */
+.profile-card img {
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border: 5px solid #007bff;
+    margin-bottom: 20px;
+}
+
+/* Nama */
+.profile-card h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin: 0 0 10px;
+}
+
+/* Paragraf deskripsi */
+.profile-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Judul "Hubungi Saya" */
+.profile-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+/* Daftar link media sosial */
+.profile-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Menjadikan link berdampingan */
+    justify-content: center; /* Memposisikan link di tengah */
+    gap: 15px; /* Memberi jarak antar link */
+}
+
+/* Tombol link */
+.profile-card ul li a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px; /* Membuat sudut tombol lebih tumpul */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek hover pada tombol link */
+.profile-card ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Kustomisasi untuk link TikTok */
+.profile-card ul li a[href*="tiktok"] {
+    background-color: #000000;
+}
+
+.profile-card ul li a[href*="tiktok"]:hover {
+    background-color: #333333;
+}
+
+/* Kustomisasi untuk link Instagram */
+.profile-card ul li a[href*="instagram"] {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.profile-card ul li a[href*="instagram"]:hover {
+    opacity: 0.9;
+}
